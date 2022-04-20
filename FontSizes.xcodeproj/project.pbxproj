@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		80D0D7702810413600F4F91F /* FontSizesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D0D76F2810413600F4F91F /* FontSizesApp.swift */; };
-		80D0D7722810413600F4F91F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D0D7712810413600F4F91F /* ContentView.swift */; };
+		80D0D7702810413600F4F91F /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D0D76F2810413600F4F91F /* Application.swift */; };
+		80D0D7722810413600F4F91F /* DynamicTypeSizeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D0D7712810413600F4F91F /* DynamicTypeSizeListView.swift */; };
 		80D0D7742810413700F4F91F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80D0D7732810413700F4F91F /* Assets.xcassets */; };
-		80D0D7772810413700F4F91F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80D0D7762810413700F4F91F /* Preview Assets.xcassets */; };
+		80D0D7A32810BD2700F4F91F /* DynamicTypeSizeSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D0D7A22810BD2700F4F91F /* DynamicTypeSizeSliderView.swift */; };
+		80D0D7A62810BD5500F4F91F /* DynamicTypeSizeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D0D7A52810BD5500F4F91F /* DynamicTypeSizeExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		80D0D76C2810413600F4F91F /* FontSizes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FontSizes.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		80D0D76F2810413600F4F91F /* FontSizesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizesApp.swift; sourceTree = "<group>"; };
-		80D0D7712810413600F4F91F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		80D0D76F2810413600F4F91F /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		80D0D7712810413600F4F91F /* DynamicTypeSizeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeSizeListView.swift; sourceTree = "<group>"; };
 		80D0D7732810413700F4F91F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		80D0D7762810413700F4F91F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		80D0D7A22810BD2700F4F91F /* DynamicTypeSizeSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeSizeSliderView.swift; sourceTree = "<group>"; };
+		80D0D7A52810BD5500F4F91F /* DynamicTypeSizeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeSizeExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,20 +53,37 @@
 		80D0D76E2810413600F4F91F /* FontSizes */ = {
 			isa = PBXGroup;
 			children = (
-				80D0D76F2810413600F4F91F /* FontSizesApp.swift */,
-				80D0D7712810413600F4F91F /* ContentView.swift */,
-				80D0D7732810413700F4F91F /* Assets.xcassets */,
-				80D0D7752810413700F4F91F /* Preview Content */,
+				80D0D77D2810417500F4F91F /* Application */,
+				80D0D7A42810BD4600F4F91F /* Extensions */,
+				80D0D77E2810417E00F4F91F /* User Interface */,
 			);
 			path = FontSizes;
 			sourceTree = "<group>";
 		};
-		80D0D7752810413700F4F91F /* Preview Content */ = {
+		80D0D77D2810417500F4F91F /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				80D0D7762810413700F4F91F /* Preview Assets.xcassets */,
+				80D0D76F2810413600F4F91F /* Application.swift */,
+				80D0D7732810413700F4F91F /* Assets.xcassets */,
 			);
-			path = "Preview Content";
+			path = Application;
+			sourceTree = "<group>";
+		};
+		80D0D77E2810417E00F4F91F /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				80D0D7712810413600F4F91F /* DynamicTypeSizeListView.swift */,
+				80D0D7A22810BD2700F4F91F /* DynamicTypeSizeSliderView.swift */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		80D0D7A42810BD4600F4F91F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				80D0D7A52810BD5500F4F91F /* DynamicTypeSizeExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +144,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80D0D7772810413700F4F91F /* Preview Assets.xcassets in Resources */,
 				80D0D7742810413700F4F91F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80D0D7722810413600F4F91F /* ContentView.swift in Sources */,
-				80D0D7702810413600F4F91F /* FontSizesApp.swift in Sources */,
+				80D0D7A62810BD5500F4F91F /* DynamicTypeSizeExtensions.swift in Sources */,
+				80D0D7A32810BD2700F4F91F /* DynamicTypeSizeSliderView.swift in Sources */,
+				80D0D7722810413600F4F91F /* DynamicTypeSizeListView.swift in Sources */,
+				80D0D7702810413600F4F91F /* Application.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +286,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FontSizes/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 78CW4BPHYV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -295,7 +315,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FontSizes/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 78CW4BPHYV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
